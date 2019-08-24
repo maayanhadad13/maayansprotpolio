@@ -1,0 +1,464 @@
+﻿html {
+    background-color: white;
+}
+
+/*Define general css*/
+#container {
+    background-color: white;
+    width: 700px;
+    margin: auto;
+}
+
+    #container * {
+        font-family: Segoe UI;
+        line-height: 20px;
+    }
+
+h1 {
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.audio {
+    margin: 0 auto;
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*Define web font*/
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../fonts/Segoe UI.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../fonts/Segoe UI Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../fonts/Segoe UI Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('../fonts/Segoe UI Bold Italic.woff') format('woff');
+}
+
+/*Define pulse animation*/
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/*Define header*/
+.logo {
+    float: right;
+    height: 50px;
+}
+
+#nav1 {
+    float: right;
+    margin-top: 6px;
+}
+
+    #nav1 ul {
+        list-style: none;
+        width: 512px;
+        margin: 0 auto;
+    }
+
+        #nav1 ul li {
+            display: inline-block;
+            float: right;
+            border-bottom: 2px solid black;
+            background-color: white;
+        }
+
+        #nav1 ul li:hover {
+            border-bottom: 2px solid black;
+        }
+
+            #nav1 ul li a {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                width: 100px;
+                height: 25px;
+                Padding-top: 10px;
+                font-size: 12px;
+                color: black;
+            }
+
+                #nav1 ul li a:hover {
+                    background-color: lightgray;
+                }
+
+                #nav1 ul li a:active {
+                    background-color: black;
+                    color: white;
+                }
+
+                #nav1 ul li a.currentPage {
+                    background-color: rgba(0, 0, 0, 0.8);
+                    color: white;
+                }
+
+
+            #nav1 ul li ul {
+                display: none;
+                position: absolute;
+            }
+
+            #nav1 ul li:hover ul {
+                display: block;
+                width: 120px;
+                margin-top: 2px;
+            }
+
+/*Define footer*/
+.contectfooter {
+    border-top: 2px solid black;
+}
+
+.details {
+    float: right;
+    width: 33%;
+    border-left: 2px solid black;
+    display: inline-block;
+    margin: 20px 0;
+    text-align: center;
+    height: 60px;
+}
+
+    .details h3 {
+        margin-bottom: 10px;
+    }
+
+    .details a {
+        color: black;
+    }
+
+.social {
+    border-left: none;
+}
+
+#facebook {
+    background-image: url('../img/facebook-logo.png');
+    background-size: contain;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+}
+
+#in {
+    background-image: url('../img/linkedin-logo.png');
+    background-size: contain;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+}
+
+
+/*Define home page*/
+
+/*Define home page lamp animation*/
+#idea {
+    background-image: url(../img/idea1-03.png);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    margin: auto;
+}
+
+    #idea:hover {
+        background-image: url(../img/idea2-01.png);
+    }
+
+
+/*home page text*/
+
+.introduction {
+    clear:both;
+    margin: auto ;
+    text-align:center;
+}
+
+    .introduction p {
+        font-size: 20px;
+    }
+
+/*down arrow*/
+
+#down {
+    margin: 20px auto;
+}
+
+    #down img {
+        width: 50px;
+    }
+
+/*project buttons*/
+.projectslist {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+    .projectslist img {
+        width: 200px;
+    }
+
+    .projectslist h2 {
+        font-size: 35px;
+        margin-top: 80px;
+        color: black;
+    }
+
+    .projectslist .projectright {
+        float: right;
+        width: 50%;
+    }
+
+    .projectslist .projectleft {
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+
+#fproject {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.fproject {
+    background-color: #BFD7A1;
+}
+
+.sproject {
+    background-color: #13C8C0;
+}
+
+.tproject {
+    background-color: #F2507B;
+}
+
+/*Softwares icons*/
+.icons {
+    text-align: center;
+    margin: 20px;
+}
+
+    .icons img {
+        width: 40px;
+    }
+
+
+/*Define first project*/
+
+.projectpage {
+    margin: 40px 20px;
+}
+/*first project text*/
+    .projectpage h1 {
+        color: #BFD7A1;
+        margin: 50px 0;
+    }
+
+    .projectpage h2 {
+        font-size: 20px;
+        color: #BFD7A1;
+        margin: 20px 0;
+    }
+
+    .projectpage h2:first-letter {
+        font-size: 30px;
+    }
+
+/*first project img&video*/
+.fprojectimg {
+    width: 200px;
+    height: 300px;
+    display: block;
+}
+.projectimgs {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+    .projectimgs a {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+#videofproject {
+    width: 500px;
+    margin: 20px auto;
+    display: block;
+}
+
+/*Define second project*/
+.projectpage.sprojectpage h1 {
+    color: #13C8C0;
+}
+.projectpage.sprojectpage h2 {
+    color: #13C8C0;
+}
+
+#sprojectimg {
+    width: 200px;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+/*Define third project*/
+    .projectpage.tprojectpage h1 {
+        color: #F2507B;
+    }
+
+    .projectpage.tprojectpage h2 {
+        color: #F2507B;
+    }
+
+/*Define third project img animation*/
+#beforandafter {
+    background-image: url(../img/Retouch_before.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+
+ #beforandafter:hover{
+     background-image: url(../img/Retouch_after.jpg);
+ }
+
+ /*Define about me page*/
+.aboutpage {
+    margin: 40px 20px;
+}
+
+/*about me text& icons*/
+    .aboutpage h1 {
+        margin: 30px 0;
+    }
+
+    .aboutpage p {
+        border-bottom: 2px solid #F2EC29;
+        border-top: 2px solid #F2EC29;
+        padding: 20px 0;
+    }
+
+.mystory {
+    width: 60%;
+    float: right;
+    margin: 20px 0;
+}
+   
+.love {
+    text-align: center;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+    .love img {
+        width: 50px;
+    }
+
+    .love ul {
+        margin-right: 20px;
+    }
+
+        .love ul li {
+            list-style: none;
+            float: right;
+            margin: 0 23px;
+            text-align: center;
+        }
+
+    .love h2 {
+        text-align:right;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+/*my photo*/
+#me {
+    width: 215px;
+    float: left;
+    margin: 20px 0;
+    border: 6px solid #F2EC29;
+    padding: 4px;
+}
+
+/*resume link*/
+.resume {
+    margin-top: 30px;
+    text-align: center;
+}
+
+    .resume a {
+        padding: 6px;
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        border-radius: 8px;
+    }
